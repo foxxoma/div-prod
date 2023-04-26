@@ -14,5 +14,5 @@
 
 # Документация
 
-- [Postman](https://github.com/foxxoma/div-prod/div.postman_collection.json)
+- [Postman](https://github.com/foxxoma/div-prod/blob/main/div.postman_collection.json)
 - [ТЗ](https://docs.google.com/document/d/1vfHYU8E_SPL9h_hGoXWN0b4AyCRsWlIn_cHLyp4P5Z8/edit)
