@@ -18,7 +18,7 @@ class CreateController extends Controller
 	{
 		$data = $request->data();
 
-		$request = ModelRequest::create($data);
-		return $request;
+		$currentRequest = ModelRequest::create($data);
+		return $currentRequest;
 	}
 }

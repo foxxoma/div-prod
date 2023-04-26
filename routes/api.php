@@ -27,7 +27,8 @@ Route::group(['namespace' => 'App\Http\Controllers\Api'], function () {
 
     Route::group(['namespace' => 'Requests'], function () {
         Route::post('requests', CreateController::class);
-        Route::post('requests/list', SelectController::class);
-        Route::get('requests/{id}', FindController::class);
+        Route::post('requests/list', SelectController::class)->middleware('auth:sanctum')->middleware('admin');
+        Route::get('requests/{id}', FindController::class)->middleware('auth:sanctum')->middleware('admin');
+        Route::put('requests', AnswerController::class)->middleware('auth:sanctum')->middleware('admin');
     });
 });

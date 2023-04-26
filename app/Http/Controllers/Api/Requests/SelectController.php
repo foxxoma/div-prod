@@ -14,7 +14,7 @@ class SelectController extends Controller
 		$query = false;
 		$data = $request->data();
 
-		if (!empty($data['page']) )
+		if (!empty($data['page']))
 		{
 			$page = $data['page']??false;
 			$count = !empty($data['count'])?$data['count']:10;
