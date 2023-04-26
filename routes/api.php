@@ -24,4 +24,10 @@ Route::group(['namespace' => 'App\Http\Controllers\Api'], function () {
         Route::post('login', LoginController::class);
         Route::post('logout', LogoutController::class)->middleware('auth:sanctum');
     });
+
+    Route::group(['namespace' => 'Requests'], function () {
+        Route::post('requests', CreateController::class);
+        Route::post('requests/list', SelectController::class);
+        Route::get('requests/{id}', FindController::class);
+    });
 });
